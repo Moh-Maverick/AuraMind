@@ -39,8 +39,8 @@ Mental health support is often inaccessible, expensive, or stigmatized. Addition
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/mental-health-chatbot.git
-   cd mental-health-chatbot
+   git clone https://github.com/Moh-Maverick/AuraMind.git
+   cd AuraMind
    ```
 
 2. **Frontend Setup**
@@ -74,6 +74,15 @@ Mental health support is often inaccessible, expensive, or stigmatized. Addition
    - Create a new Firebase project
    - Download your Firebase service account key
    - Add it to your backend directory as `firebase-service-account.json`
+
+5. **Configure Groq AI**
+   - Sign up for a Groq AI account at https://console.groq.com
+   - Generate an API key from the console
+   - Add the API key to your `.env` file:
+     ```
+     GROQ_API_KEY=your_api_key_here
+     ```
+   - The API key should be kept secure and never committed to version control
 
 ### Running the Application
 
@@ -126,20 +135,4 @@ Mental health support is often inaccessible, expensive, or stigmatized. Addition
 - GDPR compliant
 - Regular security audits
 - No personal data sharing
-
-## 🤝 Contributing
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-- Groq AI for providing the AI model
-- Firebase for backend services
-- The open-source community for various tools and libraries
-
-## 📞 Support
-For support, please email [support@auramind.com](mailto:support@auramind.com) or open an issue in the GitHub repository.
-
-## 🔄 Updates
-We regularly update our platform with new features and improvements. Stay tuned! 
+- API keys and sensitive credentials are stored securely in environment variables
